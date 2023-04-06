@@ -43,6 +43,11 @@ function updateView (){
     let htmlContent=``;
     for(let i=0;i<cards.length;i++){
         let StarRate=cards[i].rate;
+        if( +StarRate > 5 ){
+            StarRate = 5;
+        }else if(+StarRate < 1){
+            StarRate = 1;
+        }
         let FullStars=``;
         let EmptyStars=``;
         for(let j=0; j<StarRate; j++){
