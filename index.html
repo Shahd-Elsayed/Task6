@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1 class="title">Add Book :</h1>
+        <hr class=" add hr2">
+    <!--ADD BOOKS SECTION -->
+        <div id="addBook">
+            <label for="bookName">Book Name:</label><br>
+            <input type="text" id="bookName"><br>
+            <label for="bookDes">Brief Describe:</label><br>
+            <input type="text" maxlength="10" id="bookDes"><br>
+            <label for="rate">Rating Stars:</label>
+            <input type="number" min="1" max="5" placeholder="1" id="rate"><br>
+            <label for="">Do you read this book ?</label>
+            <input type="checkbox" id="read" name="read"><br>
+            <label for="bookImage">Book image:</label>
+            <input id="image" type="file" accept="image/jpeg, image/png, image/jpg"><br>
+            <button id="addbtn">Add Book</button>
+            <button id="resetbtn"onclick="reset()">Reset Data</button>
+        </div>
+    </section>
+    <!-- BOOKS INFORMATION SECTION -->
+    <main>
+        <hr class="hr1">
+        <h1 class="title">Books :</h1>
+        <hr class="info hr2">
+        <div id="books">
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
