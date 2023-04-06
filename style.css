@@ -205,24 +205,28 @@ main{
 
 @media(max-width:768px){
     #addBook{
+        box-shadow: 0 0 ;
         position: static;
-        width: 500px;
+        width: 80%;
         font-size: 16px;
-        margin: 10px 12%;
+        margin: 5px 12%;
+        padding: 0px;
     }
     #resetbtn, button {
         font-size: 16px;
         margin: 15px 0px 0px 20px;
     }
     button{
-        padding: 15px 37%;
+        width: 100%;
+        padding: 12px 0%;
+        margin-left: 0;
     }
     #resetbtn{
         position: inherit;
-        padding: 15px 36%;
+        margin-left: 0;
     }
     .title{
-        margin: 20px 30px;
+        margin: 20px 7px;
         text-align: start;
         font-size: 26px;
     }
@@ -246,7 +250,7 @@ main{
     }
     #del{
         margin-top: 15px;
-        margin-left: 5%;
+        margin-left: 0%;
         margin-bottom: 15px;
         padding: 15px 100px;
     }
@@ -255,6 +259,12 @@ main{
         color: var(--starColor);
         padding: 0px;
         margin: 10px;
+    }
+    .hr1{
+        margin: 35px 20px;
+    }
+    .hr2{
+        margin-left:0px;
     }
 }
 /* END RESPONSIVE */
